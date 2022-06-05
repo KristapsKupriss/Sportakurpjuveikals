@@ -1,0 +1,35 @@
+﻿.navbar-toggler {
+    background-color: rgb(255, 0, 0);
+    height: 1.5rem;
+    width: 1rem;
+}
+/*mekletaja mainigie*/
+.top-row {
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid #d6d5d5;
+}
+
+.navbar-brand {
+    font-size: 1.1rem;
+}
+
+.oi {
+    width: 1.5rem;
+    font-size: 0.5rem;
+    vertical-align: text-top;
+    top: 0px;
+}
+/*teksta izmērs*/
+.nav-item {
+    font-size: 0.9rem;
+    padding-bottom: 0.1rem;
+    background-color: black;
+}
+    /*augsas starpa*/
+    .nav-item:first-of-type {
+        padding-top: 1rem;
+    }
+    /*apakssas starpa*/
+    .nav-item:last-of-type {
+        padding-bottom: 0.5rem;
+    }

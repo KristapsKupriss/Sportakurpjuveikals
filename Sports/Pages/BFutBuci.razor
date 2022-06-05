@@ -1,0 +1,27 @@
+﻿@page "/Bernukurpes/1"
+@using Sports.Data
+@using Sports.Services
+@inherits OwningComponentBase<BernufutbolaBucu>
+<h3>Bernu futbola buci</h3>
+
+    <Table border='1'>
+        <tr>
+            <th>Apava Id</th>
+            <th>Modelis</th>
+            <th>Cena</th>
+        </tr>
+        <tr>
+            @foreach(var item in sc){ 
+            <td>@item.ID</td>
+            <td>@item.Modelis</td>
+            <td>@item.Cena</td>
+            }
+        </tr>
+    </Table>
+@code {
+    public System.Collections.Generic.IList<Bernufutbolabuci> sc;
+
+    protected override void OnInitialized(){
+        sc=Service.DisplayBFB();
+    }
+}

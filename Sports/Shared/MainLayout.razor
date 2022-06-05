@@ -1,0 +1,25 @@
+﻿@inherits LayoutComponentBase
+
+<PageTitle>Sports</PageTitle>
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+     <main>
+        <div class="top-row px-4 ">
+            <h1>Sporta Kurpju veikals</h1>  
+        </div>
+       
+        <form class="example" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+    
+   
