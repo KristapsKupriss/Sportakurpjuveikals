@@ -3,17 +3,16 @@
 
 namespace Sports.Services
 {
-    public class BernufutbolaBucu
+    public class VKurp
     {
         private readonly ApplicationDbContext _dbcontext;
-        public BernufutbolaBucu(ApplicationDbContext _db)
+        public VKurp(ApplicationDbContext _db)
         {
             _dbcontext = _db;
         }
-        public List<Bernufutbolabuci> DisplayBFB()
+        public List<VirKurpes> DisplayV()
         {
-            return _dbcontext.BFB.ToList();
+            return _dbcontext.V.ToList();
         }
     }
 }
-

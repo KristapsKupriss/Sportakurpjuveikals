@@ -1,15 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Sports.Data;
 using Sports.Services;
 
@@ -25,13 +14,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 
-builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql("server=localhost;port=5432:userid=postgres;database=postgres;password=11111111"));
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql("Server=localhost;Port=5432;Database=demodb;User Id=postgres;Password=11111111"));
 
+builder.Services.AddScoped<BernuSA>();
+builder.Services.AddScoped<SievFutB>();
+builder.Services.AddScoped<SievSkrA>();
+builder.Services.AddScoped<VirFutB>();
+builder.Services.AddScoped<VirSkrA>();
 builder.Services.AddScoped<BernufutbolaBucu>();
-
-
-
-
+builder.Services.AddScoped<BKurp>();
+builder.Services.AddScoped<SKurp>();
+builder.Services.AddScoped<VKurp>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

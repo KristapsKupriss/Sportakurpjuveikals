@@ -1,10 +1,10 @@
-﻿@page "/Bernukurpes/1"
+﻿@page "/Viriesukurpes/2"
 @using Sports.Data
 @using Sports.Services
-@inherits OwningComponentBase<BernufutbolaBucu>
-<h3>Kid's football boots</h3>
+@inherits OwningComponentBase<VirSkrA>
+<h3>Men's running shoes</h3>
 
-    <Table border='2'>
+    <Table border='1'>
         <tr>
             <th>ID</th>
             <th>Model</th>
@@ -20,10 +20,9 @@
             }
     </Table>
 @code {
-    
-    public System.Collections.Generic.IList<Bernufutbolabuci> sc;
+    public System.Collections.Generic.IList<ViriesuSkriesanasApavi> sc;
 
     protected override void OnInitialized(){
-        sc=Service.DisplayBFB();
+        sc=Service.DisplayVSA();
     }
 }

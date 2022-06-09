@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Components;
 
-namespace Sports.Data
-{
-    public class Bernufutbolabuci
+namespace Sports.Data;
+
+    public class Viriesufutbolabuci
     {
         [Key]
         public int ID { get; set; }
         public string? Modelis { get; set; }
         public double Cena { get; set; }
+
+
     }
-}
