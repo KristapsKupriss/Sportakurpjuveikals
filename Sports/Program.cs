@@ -25,6 +25,7 @@ builder.Services.AddScoped<BernufutbolaBucu>();
 builder.Services.AddScoped<BKurp>();
 builder.Services.AddScoped<SKurp>();
 builder.Services.AddScoped<VKurp>();
+builder.Services.AddScoped<JaunasK>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

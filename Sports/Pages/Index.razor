@@ -1,6 +1,31 @@
 ﻿@page "/"
+@using Sports.Data
+@using Sports.Services
+@inherits OwningComponentBase<JaunasK>
+<h3>New shoes</h3>
 
-<PageTitle>Sakums</PageTitle>
+    <Table>
+        <tr>
+            <th>ID</th>
+            <th>Model</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Buy</th>
+        </tr>
+            @foreach(var item in sc){ 
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Modelis</td>
+            <td>@item.Cena</td>
+            <td>@item.Qty</td>
+            <td><button>Add to Cart</button></td>
+       </tr>
+            }
+    </Table>
+@code {
+    public System.Collections.Generic.IList<JaunasKurpes> sc;
 
-<h1>Kautkas</h1>
-
+    protected override void OnInitialized(){
+        sc=Service.DisplayJ();
+    }
+}

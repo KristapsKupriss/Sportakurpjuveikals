@@ -8,13 +8,14 @@ using Microsoft.AspNetCore.Components;
 
 namespace Sports.Data;
 
-public class VirKurpes
+public class JaunasKurpes
 {
     [Key]
-    public int ID { get; set; }
+    public int Id { get; set; }
     public string? Modelis { get; set; }
     public double Cena { get; set; }
-    public int Qty { get; set; }
     public int CategoryId { get; set; }
+    public int Qty { get; set; }
 
 }
+

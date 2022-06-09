@@ -10,12 +10,12 @@ namespace Sports.Services
 {
     public class BKurp
     {
-        protected readonly ApplicationDbContext _dbcontext;
+        private readonly ApplicationDbContext _dbcontext;
         public BKurp(ApplicationDbContext _db)
         {
-            _dbcontext = _db;
+            this._dbcontext = _db;
         }
-        public List<BernuSportaKurpes> DisplayB()
+    public List<BernuSportaKurpes> DisplayB()
         {
             return _dbcontext.B.ToList();
         }

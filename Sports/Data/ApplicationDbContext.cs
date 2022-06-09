@@ -24,7 +24,6 @@ namespace Sports.Data
         public virtual DbSet<ViriesuSkriesanasApavi> VSA { get; set; }
         public virtual DbSet<VirKurpes> V { get; set; }
         public virtual DbSet<SievKurpes> S { get; set; }
-
-
+        public virtual DbSet<JaunasKurpes> Jaunumi { get; set; }
     }
 }

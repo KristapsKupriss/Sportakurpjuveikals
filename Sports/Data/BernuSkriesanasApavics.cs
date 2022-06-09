@@ -14,4 +14,6 @@ public class BernuSkriesanasApavics
     public int ID { get; set; }
     public string? Modelis { get; set; }
     public double Cena { get; set; }
+    public int Qty { get; set; }
+    public int CategoryId { get; set; }
 }

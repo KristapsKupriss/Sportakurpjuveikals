@@ -1,6 +1,6 @@
 ﻿<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">Sākums</a>
+        <a class="navbar-brand" href="">Start</a>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu"> </button>
     </div>
 </div>
@@ -11,17 +11,17 @@
         <div class="nav-item px-3">
             <li class="nav-item px-3">
   <NavLink class="nav-link" href="Sieviesukurpes" Match=@NavLinkMatch.All>
-    <span class="oi oi-plus" aria-hidden="true"></span>Sievietēm
+    <span class="oi oi-plus" aria-hidden="true"></span>Woman's
   </NavLink>
   <ul class="nav flex-column">
     <li class="nav-item px-3">
       <NavLink class="nav-link" href="Sieviesukurpes/1" Match=@NavLinkMatch.All>
-        <span class="oi oi-plus" aria-hidden="true"></span>Futbola buči
+        <span class="oi oi-plus" aria-hidden="true"></span>Football boots
       </NavLink>
     </li>
     <li class="nav-item px-3">
       <NavLink class="nav-link" href="Sieviesukurpes/2" Match=@NavLinkMatch.All>
-        <span class="oi oi-plus" aria-hidden="true"></span>Skriešanas apavi
+        <span class="oi oi-plus" aria-hidden="true"></span>Running shoes
       </NavLink>
     </li>
   </ul>
@@ -30,17 +30,17 @@
         <div class="nav-item px-3">
             <li class="nav-item px-3">
   <NavLink class="nav-link" href="Viriesukurpes" Match=@NavLinkMatch.All>
-    <span class="oi oi-plus" aria-hidden="true"></span>Vīriešiem
+    <span class="oi oi-plus" aria-hidden="true"></span>Men's
   </NavLink>
   <ul class="nav flex-column">
     <li class="nav-item px-3">
       <NavLink class="nav-link" href="Viriesukurpes/1" Match=@NavLinkMatch.All>
-        <span class="oi oi-plus" aria-hidden="true"></span>Futbola buči
+        <span class="oi oi-plus" aria-hidden="true"></span>Football boots
       </NavLink>
     </li>
     <li class="nav-item px-3">
       <NavLink class="nav-link" href="Viriesukurpes/2" Match=@NavLinkMatch.All>
-        <span class="oi oi-plus" aria-hidden="true"></span>Skriešanas apavi
+        <span class="oi oi-plus" aria-hidden="true"></span>Running shoes
       </NavLink>
     </li>
   </ul>
@@ -49,24 +49,26 @@
         <div class="nav-item px-3">
             <li class="nav-item px-3">
   <NavLink class="nav-link" href="Bernukurpes" Match=@NavLinkMatch.All>
-    <span class="oi oi-plus" aria-hidden="true"></span>Bērniem
+    <span class="oi oi-plus" aria-hidden="true"></span>Kid's
   </NavLink>
   <ul class="nav flex-column">
     <li class="nav-item px-3">
       <NavLink class="nav-link" href="Bernukurpes/1" Match=@NavLinkMatch.All>
-        <span class="oi oi-plus" aria-hidden="true"></span>Futbola buči
+        <span class="oi oi-plus" aria-hidden="true"></span>Football boots
       </NavLink>
     </li>
     <li class="nav-item px-3">
       <NavLink class="nav-link" href="Bernukurpes/2" Match=@NavLinkMatch.All>
-        <span class="oi oi-plus" aria-hidden="true"></span>Skriešanas apavi
+        <span class="oi oi-plus" aria-hidden="true"></span>Running shoes
       </NavLink>
     </li>
   </ul>
 </li>
+
         </div>
     </nav>
 </div>
+
 
 @code {
     private bool collapseNavMenu = true;

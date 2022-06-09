@@ -4,11 +4,12 @@
 @inherits OwningComponentBase<VirFutB>
 <h3>Men's football boots</h3>
 
-    <Table border='1'>
+    <Table>
         <tr>
             <th>ID</th>
             <th>Model</th>
             <th>Price</th>
+            <th>Qty</th>
             <th>Buy</th>
         </tr>
             @foreach(var item in sc){ 
@@ -16,6 +17,8 @@
             <td>@item.ID</td>
             <td>@item.Modelis</td>
             <td>@item.Cena</td>
+            <td>@item.Qty</td>
+            <td><button>Add to Cart</button></td>
        </tr>
             }
     </Table>
